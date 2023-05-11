@@ -1,0 +1,7 @@
+package teste_curso_games;
+
+public class ElfInimigo extends Inimigo {
+	
+	
+	
+}

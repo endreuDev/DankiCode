@@ -1,0 +1,22 @@
+package teste_curso_games;
+import java.util.ArrayList;
+
+public class Game {
+	
+	public static void main(String[] args) {
+		
+		Player player = new Player();
+		ArrayList<Inimigo> inimigos = new ArrayList<Inimigo>();
+		
+		inimigos.add(new ElfInimigo(100));
+		inimigos.add(new ElfInimigo(100));
+		inimigos.add(new ElfInimigo(100));
+		inimigos.add(new ElfInimigo(100));
+		inimigos.add(new ElfInimigo(100));
+
+		inimigos.get(0).tomarDano();
+		
+		System.out.println(inimigos.get(0).vida);
+		
+	}
+}

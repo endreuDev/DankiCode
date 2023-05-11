@@ -1,0 +1,13 @@
+package teste_curso_games;
+
+public class Game {
+	
+	public static void main(String[] args) {
+		
+		Player player = new Player();
+		ArrayList<Inimigo> inimigos = new ArrayList<Inimigo>();
+		ElfInimigo elf = new ElfInimigo(10);
+		
+		
+	}
+}

@@ -1,0 +1,18 @@
+package teste_curso_games;
+
+public class Game {
+	
+	public static void main(String[] args) {
+		String nome = "Andrew";
+		int idade = 18;
+		double peso = 75.5;
+		
+		if(idade == 28) {
+			System.out.println("A idade eh 28");
+		} else {
+			System.out.println("CHUPA CU");
+		}
+	}
+	
+
+}

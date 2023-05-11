@@ -1,0 +1,18 @@
+package teste_curso_games;
+
+public class Game {
+	
+	public static void main(String[] args) {
+		String nome = "Andrew";
+		int idade = 28;
+		double peso = 75.5;
+		
+		nome = "Joao";
+		
+		System.out.println("Hello, world! " + nome);
+		System.out.println("A idade eh " + idade);
+		System.out.println("O peso eh " + peso);
+	}
+	
+
+}

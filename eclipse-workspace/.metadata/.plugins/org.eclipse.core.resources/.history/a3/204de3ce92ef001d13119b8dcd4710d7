@@ -1,0 +1,11 @@
+package teste_curso_games;
+
+public class Game {
+	
+	public static void main(String[] args) {
+		String nome = "Andrew";
+		System.out.println("Hello, " + nome);
+	}
+	
+
+}

@@ -11,9 +11,9 @@ public class Blocks extends Rectangle{
 	}
 	
 	public void render(Graphics g) {
-		g.setColor(Color.magenta);
-		g.fillRect(x, y, width, height);
 		g.setColor(Color.black);
+		g.fillRect(x, y, width, height);
+		g.setColor(Color.white);
 		g.drawRect(x, y, width, height);
 	}
 }

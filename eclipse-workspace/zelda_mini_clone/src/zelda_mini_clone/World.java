@@ -10,18 +10,18 @@ public class World {
 	public static List<Blocks> blocks = new ArrayList<Blocks>();
 	
 	public World() {
-		for(int xx = 0; xx < 15; xx++) {
+		for(int xx = 0; xx < Game.WIDTH / 32; xx++) {
 			blocks.add(new Blocks(xx*32, 0));
 		}
-		for(int xx = 0; xx < 15; xx++) {
-			blocks.add(new Blocks(xx*32, 480-32));
+		for(int xx = 0; xx < Game.WIDTH / 32; xx++) {
+			blocks.add(new Blocks(xx*32, Game.HEIGHT-32));
 		}
 		
-		for(int yy = 0; yy < 15; yy++) {
+		for(int yy = 0; yy < Game.HEIGHT / 32; yy++) {
 			blocks.add(new Blocks(0, yy*32));
 		}
-		for(int yy = 0; yy < 15; yy++) {
-			blocks.add(new Blocks(480-32, yy*32));
+		for(int yy = 0; yy < Game.HEIGHT / 32; yy++) {
+			blocks.add(new Blocks(Game.WIDTH-32, yy*32));
 		}
 	}
 	

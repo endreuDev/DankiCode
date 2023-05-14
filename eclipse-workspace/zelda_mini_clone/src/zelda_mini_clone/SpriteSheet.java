@@ -9,7 +9,7 @@ public class SpriteSheet {
 
 	public static BufferedImage spritesheet;
 	
-	public static BufferedImage player_front;
+	public static BufferedImage[] player_front;
 	
 	public SpriteSheet() {
 		try {
@@ -18,7 +18,10 @@ public class SpriteSheet {
 			e.printStackTrace();
 		}
 		
-		player_front = SpriteSheet.getSprite(1, 11, 15, 16);
+		player_front = new BufferedImage[2];
+		
+		player_front[0] = SpriteSheet.getSprite(1, 11, 15, 16);
+		player_front[1] = SpriteSheet.getSprite(17, 11, 15, 16);
 	}
 	
 	public static BufferedImage getSprite(int x, int y, int width, int height) {
